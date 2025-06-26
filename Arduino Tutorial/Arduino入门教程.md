@@ -62,8 +62,21 @@
      * 如果下载失败，重置其他开发板管理器地址:
           *   https://espressif.github.io/arduino-esp32/package_esp32_index.json
           *   https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json
-      * 还有一种情况你无法下载成功，你的网络无法访问GitHub（即不能访问外网，无法翻墙），不过无需担心，这里也将给你提供一种方法。点击链接去下载对应的版本即可。（还在整理中，给你带来不便抱歉） 
-
+ 
+* 离线安装
+  * 点击我们提供的百度网盘内的 ESP32 多个版本离线包，可根据板安装要求选择一个符合要求的版本进行下载，其余版本可按需自行下载。
+  * 将提供的开发板压缩包解压缩
+    
+    C:\Users\{用户名}\AppData\Local\Arduino15\packages\
+    
+  * 将解压文件放在对应用户的arduino器件包目录
+    
+    C:\Users\waveshare\AppData\Local\Arduino15\packages\
+    
+  * 以用户名为VIEWE为例
+  * 关闭全部arduino窗口，确保arduino关闭
+  * 重新打开arduino，并打开板管理器,看到esp32-arduino已经安装即可
+  若此路径下已有esp32的文件夹，建议将其另存并删除此路径下的原esp32文件夹，以便正常使用离线包新生成的esp32文件夹
 
 
 
