@@ -24,8 +24,8 @@
 
 | Arduino开发教程|ESP-IDF开发教程|Platformio开发教程|SquareLine开发教程|
 | :------------ |:---------------:|:--------:|:-------------:|
-| | | | |
-| | | | |
+|![](img/Arduino.webp) |![](img/ESP-IDF-Logo.webp) |![](img/PlatformIO-Logo.png) |![](img/SquareLineStudio-Logo.webp) |
+| [![](img/GetStarted.webp)]() | [![](img/GetStarted.webp)]() | [![](img/GetStarted.webp)]() | [![](img/GetStarted.webp)]() |
 
 在这个仓库中我们将对三个开发环境以及UI设计工具进行一一介绍，从安装到运行。力求为各位刚入行的或者DIY爱好者提供更加详细的使用教程，也希望能帮助大家。我们将持续更新完善！！！
 
