@@ -1,6 +1,10 @@
-# 如何在Arduino IDE中安装esp32
-
 * [English Version](./How_To_Configure_Arduino-esp32.md)
+  
+# Arduino入门教程
+
+本章介绍 Arduino 环境搭建，包括 Arduino IDE、ESP32板管理、相关库的安装，程序编译下载及示例程序测试，帮助用户掌握开发板，便于二次开发。
+
+![](img/image.png)
 
 ## 目录
 
