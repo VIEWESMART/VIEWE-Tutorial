@@ -1,3 +1,4 @@
+# [中文]（README_CN.md）
 # Description
 Currently, three development tools and frameworks—Arduino IDE, ESP-IDF, and PlatformIO—along with the UI design tool SquareLine Studio are provided, offering flexible development choices. You can select the appropriate tool based on project requirements and personal preferences.
 
