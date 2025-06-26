@@ -1,3 +1,4 @@
+# [English](README.md)
 # 说明
 目前提供 Arduino IDE 、ESP-IDF 和 PlatformIO 三种开发工具和框架以及ui设计工具 SquareLine Studio，提供了灵活的开发选择，你可以根据项目需求和个人习惯选择适合的开发工具。
 
