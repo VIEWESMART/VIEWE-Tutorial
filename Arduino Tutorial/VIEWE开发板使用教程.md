@@ -79,11 +79,11 @@
 2. **打开示例**
 
 - 导航到 `File` > `Examples` > `ESP32_Display_Panel`
-- 选择 `Arduino` > `board` > [`board_static_config`](../../examples/arduino/board/board_static_config/)
+- 选择 `Arduino` > `board` > [`board_static_config`](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/board/board_static_config)
 
 3. **修改代码**
 
-- 如果您正在使用 [支持的开发板](../../README_CN.md#支持的开发板)，请修改 *esp_panel_board_supported_conf.h* 配置文件中的宏定义来启用目标开发板。参阅 [加载支持的开发板](#加载支持的开发板) 获取更多信息。
+- 如果您正在使用 [支持的开发板](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/README_CN.md#%E6%94%AF%E6%8C%81%E7%9A%84%E5%BC%80%E5%8F%91%E6%9D%BF)，请修改 *esp_panel_board_supported_conf.h* 配置文件中的宏定义来启用目标开发板。参阅 [加载支持的开发板](#加载支持的开发板) 获取更多信息。
 - 如果您正在使用自定义开发板，请修改 *esp_panel_board_custom_conf.h* 配置文件中的宏定义来配置开发板参数。参阅 [加载自定义开发板](#加载自定义开发板) 获取更多信息。
 
 4. **编译上传**
@@ -100,7 +100,7 @@
 - 查看 [常见问题及解答](#常见问题及解答)
 
 > [!NOTE]
-> 如果遇到问题，请先查看 [常见问题及解答](#常见问题及解答) 章节。如果问题仍未解决，可以在 [GitHub Issues](https://github.com/esp-arduino-libs/ESP32_Display_Panel/issues) 提交问题。
+> 如果遇到问题，请先查看 [常见问题及解答](#常见问题及解答) 章节。如果问题仍未解决，可以在 [ESP GitHub Issues](https://github.com/esp-arduino-libs/ESP32_Display_Panel/issues) 提交问题也可以在 [ESP GitHub Issues](https://github.com/VIEWESMART/ESP32_Display_Panel/issues)提交问题 。
 
 ## SDK 及依赖库
 
@@ -134,9 +134,9 @@ ESP32_Display_Panel 及依赖库已经上传到了 Arduino 库管理器，您可
 
 由于 Arduino IDE 无法像 ESP-IDF 通过 menuconfig 或 PlatformIO 通过编译选项来调整配置，本库提供了通过修改特定配置文件的方式进行配置。主要包括以下三个配置文件：
 
-- [esp_panel_drivers_conf.h](../../esp_panel_drivers_conf.h)
-- [esp_panel_board_supported_conf.h](../../esp_panel_board_supported_conf.h)
-- [esp_panel_board_custom_conf.h](../../esp_panel_board_custom_conf.h)
+- [esp_panel_drivers_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/esp_panel_drivers_conf.h)
+- [esp_panel_board_supported_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/esp_panel_board_supported_conf.h)
+- [esp_panel_board_custom_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/esp_panel_board_custom_conf.h)
 
 以下是配置文件的使用特点：
 
@@ -153,7 +153,7 @@ ESP32_Display_Panel 及依赖库已经上传到了 Arduino 库管理器，您可
 
 ### 调整驱动配置
 
-ESP32_Display_Panel 会根据 [esp_panel_drivers_conf.h](../../esp_panel_drivers_conf.h) 配置文件来调整 `esp_panel::drivers` 中代码的功能和参数，请参考以下步骤进行设置：
+ESP32_Display_Panel 会根据 [esp_panel_drivers_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/esp_panel_drivers_conf.h) 配置文件来调整 `esp_panel::drivers` 中代码的功能和参数，请参考以下步骤进行设置：
 
 1. 参阅 [配置说明](#配置说明) 来了解配置文件的搜索路径。
 2. 确认 `当前工程目录` 或 `Arduino 库目录` 中存在 *esp_panel_drivers_conf.h* 配置文件，若不存在，请从 ESP32_Display_Panel 的根目录或者示例工程中复制配置文件到任一目录中。
@@ -169,11 +169,11 @@ ESP32_Display_Panel 会根据 [esp_panel_drivers_conf.h](../../esp_panel_drivers
     ```
 
 > [!NOTE]
-> *esp_panel_drivers_conf.h* 中默认只启用了部分驱动，如果想要通过代码动态加载开发板配置（如示例 [board_dynamic_config](../../examples/arduino/board/board_dynamic_config/)），请先启动所有需要使用的驱动。
+> *esp_panel_drivers_conf.h* 中默认只启用了部分驱动，如果想要通过代码动态加载开发板配置（如示例 [board_dynamic_config](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/board/board_dynamic_config)），请先启动所有需要使用的驱动。
 
 ### 加载支持的开发板
 
-ESP32_Display_Panel 会根据 [esp_panel_board_supported_conf.h](../../esp_panel_board_supported_conf.h) 配置文件来设置 `esp_panel::board::Board` 中默认开发板的配置，请参考以下步骤进行设置：
+ESP32_Display_Panel 会根据 [esp_panel_board_supported_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/esp_panel_drivers_conf.h) 配置文件来设置 `esp_panel::board::Board` 中默认开发板的配置，请参考以下步骤进行设置：
 
 1. 参阅 [配置说明](#配置说明) 来了解配置文件的搜索路径。
 2. 确认 `当前工程目录` 或 `Arduino 库目录` 中存在 *esp_panel_board_supported_conf.h* 配置文件，若不存在，请从 ESP32_Display_Panel 的根目录或者示例工程中复制配置文件到任一目录中。
@@ -200,7 +200,7 @@ ESP32_Display_Panel 会根据 [esp_panel_board_supported_conf.h](../../esp_panel
 
 ### 加载自定义开发板
 
-ESP32_Display_Panel 会根据 [esp_panel_board_custom_conf.h](../../esp_panel_board_custom_conf.h) 配置文件来设置 `esp_panel::board::Board` 中默认开发板的配置，请参考以下步骤进行设置：
+ESP32_Display_Panel 会根据 [esp_panel_board_custom_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/esp_panel_board_custom_conf.h) 配置文件来设置 `esp_panel::board::Board` 中默认开发板的配置，请参考以下步骤进行设置：
 
 1. 参阅 [配置说明](#配置说明) 来了解配置文件的搜索路径。
 2. 确认 `当前工程目录` 或 `Arduino 库目录` 中存在 *esp_panel_board_custom_conf.h* 配置文件，若不存在，请从 ESP32_Display_Panel 的根目录或者示例工程中复制配置文件到任一目录中。
@@ -292,32 +292,32 @@ ESP32_Display_Panel 会根据 [esp_panel_board_custom_conf.h](../../esp_panel_bo
 
 以下示例演示了如何使用 `esp_panel::drivers::LCD` 驱动不同接口和不同型号的 LCD 控制器，并通过显示彩条进行测试：
 
-* [SPI LCD](../../examples/arduino/drivers/lcd/lcd_spi/)
-* [QSPI LCD](../../examples/arduino/drivers/lcd/lcd_qspi/)
-* [Single RGB LCD](../../examples/arduino/drivers/lcd/lcd_single_rgb/)
-* [3-wire SPI + RGB LCD](../../examples/arduino/drivers/lcd/lcd_3wire_spi_rgb/)
-* [MIPI-DSI LCD](../../examples/arduino/drivers/lcd/lcd_mipi_dsi/)
+* [SPI LCD](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/lcd/lcd_spi)
+* [QSPI LCD](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/lcd/lcd_qspi/)
+* [Single RGB LCD](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/lcd/lcd_single_rgb/)
+* [3-wire SPI + RGB LCD](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/lcd/lcd_3wire_spi_rgb/)
+* [MIPI-DSI LCD](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/lcd/lcd_mipi_dsi/)
 
 以下示例演示了如何使用 `esp_panel::drivers::Touch` 驱动不同接口和不同型号的触摸控制器，并通过打印触摸点坐标进行测试：
 
-* [I2C Touch](../../examples/arduino/drivers/touch/touch_i2c/)
-* [SPI Touch](../../examples/arduino/drivers/touch/touch_spi/)
+* [I2C Touch](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/touch/touch_i2c/)
+* [SPI Touch](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/touch/touch_spi/)
 
 ### Board
 
 以下示例演示了如何使用 `esp_panel::board::Board` 一站式驱动内置开发板或自定义开发板的屏幕：
 
-* [Board Dynamic Config](../../examples/arduino/board/board_dynamic_config/)：此示例演示了如何通过代码动态加载开发板的显示屏设置，并通过显示彩条和打印触摸坐标来验证配置。
-* [Board Static Config](../../examples/arduino/board/board_static_config/)：此示例演示了如何通过 `esp_panel_board_supported_conf.h` 和 `esp_panel_board_custom_conf.h` 配置文件静态加载开发板的显示屏设置，并通过显示彩条和打印触摸坐标来验证配置。
+* [Board Dynamic Config](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/board/board_dynamic_config/)：此示例演示了如何通过代码动态加载开发板的显示屏设置，并通过显示彩条和打印触摸坐标来验证配置。
+* [Board Static Config](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/board/board_static_config/)：此示例演示了如何通过 `esp_panel_board_supported_conf.h` 和 `esp_panel_board_custom_conf.h` 配置文件静态加载开发板的显示屏设置，并通过显示彩条和打印触摸坐标来验证配置。
 
 ### GUI
 
 以下示例演示了如何使用 `LVGL v8` 版本来开发 GUI 界面：
 
-* [Simple Port](../../examples/arduino/gui/lvgl_v8/simple_port/)：此示例演示了如何移植 `LVGL v8`。并且对于 `RGB/MIPI-DSI` 接口，它还可以启用避免撕裂和旋转功能。
-* [Simple Rotation](../../examples/arduino/gui/lvgl_v8/simple_rotation/)：此示例演示了如何使用 `LVGL v8` 旋转显示屏。
-* [SquareLine Port](../../examples/arduino/gui/lvgl_v8/squareline_port/)：此示例演示了如何移植 `SquareLine (v1.4.x)` 项目。并且对于 `RGB/MIPI-DSI` 接口，它还可以启用避免撕裂和旋转功能。
-* [SquareLine Wi-Fi Clock](../../examples/arduino/gui/lvgl_v8/squareline_wifi_clock/)：此示例演示了通过 `SquareLine (v1.4.x)` 实现一个简单的 Wi-Fi 时钟，并且可以显示天气信息。
+* [Simple Port](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/gui/lvgl_v8/simple_port/)：此示例演示了如何移植 `LVGL v8`。并且对于 `RGB/MIPI-DSI` 接口，它还可以启用避免撕裂和旋转功能。
+* [Simple Rotation](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/gui/lvgl_v8/simple_rotation/)：此示例演示了如何使用 `LVGL v8` 旋转显示屏。
+* [SquareLine Port](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/gui/lvgl_v8/squareline_port/)：此示例演示了如何移植 `SquareLine (v1.4.x)` 项目。并且对于 `RGB/MIPI-DSI` 接口，它还可以启用避免撕裂和旋转功能。
+* [SquareLine Wi-Fi Clock](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/gui/lvgl_v8/squareline_wifi_clock/)：此示例演示了通过 `SquareLine (v1.4.x)` 实现一个简单的 Wi-Fi 时钟，并且可以显示天气信息。
 
 > [!NOTE]
 > * 使用上述示例时，请确保已经安装了符合版本要求的 `LVGL` 库。
@@ -331,7 +331,7 @@ ESP32_Display_Panel 会根据 [esp_panel_board_custom_conf.h](../../esp_panel_bo
 
 ### 配置 esp-lib-utils
 
-ESP32_Display_Panel 依赖于 `esp-lib-utils` 库，使用其提供的 `日志`、`内存分配` 和 `检查` 等功能，`esp-lib-utils` 库同样采用了通过修改特定配置文件 [esp_utils_conf.h](../../template_files/esp_utils_conf.h) 来调整库的行为和参数，您可以参考 [调整驱动配置](#调整驱动配置) 进行修改。
+ESP32_Display_Panel 依赖于 `esp-lib-utils` 库，使用其提供的 `日志`、`内存分配` 和 `检查` 等功能，`esp-lib-utils` 库同样采用了通过修改特定配置文件 [esp_utils_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/template_files/esp_utils_conf.h) 来调整库的行为和参数，您可以参考 [调整驱动配置](#调整驱动配置) 进行修改。
 
 以设置 `日志` 等级为 `DEBUG` 并开启 `函数功能追踪` 功能为例，下面是修改后的 *esp_utils_conf.h* 文件的部分内容：
 
@@ -361,16 +361,12 @@ ESP32_Display_Panel 依赖于 `esp-lib-utils` 库，使用其提供的 `日志`�
 
 如果正在使用 [支持的开发板](../../README_CN.md#支持的开发板)，以下是开发板制造商提供的推荐配置指南：
 
-- [Espressif](../../docs/board/board_espressif.md#arduino-ide)
-- [M5Stack](../../docs/board/board_m5stack.md#arduino-ide)
-- [Elecrow](../../docs/board/board_elecrow.md#arduino-ide)
-- [Jingcai](../../docs/board/board_jingcai.md#arduino-ide)
-- [Waveshare](../../docs/board/board_waveshare.md#arduino-ide)
-- [VIEWE](../../docs/board/board_viewe.md#arduino-ide)
+- [Espressif](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/docs/board/board_espressif.md#arduino-ide)
+- [VIEWE](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/docs/board/board_viewe.md#arduino-ide)
 
 ### 配置 LVGL
 
-LVGL 的功能和参数可以通过修改 [lv_conf.h](../../template_files/lv_conf.h) 配置文件来调整。以下是配置 LVGL 的说明：
+LVGL 的功能和参数可以通过修改 [lv_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/template_files/lv_conf.h) 配置文件来调整。以下是配置 LVGL 的说明：
 
 1. **配置文件查找规则**
 
