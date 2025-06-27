@@ -73,7 +73,7 @@
 - 导航到 `Tools` > `Board` > `esp32`
 - 选择您的开发板型号。如果未找到匹配的型号，请参考以下信息：
 
-  * 如果您正在使用 [支持的开发板](../../README_CN.md#支持的开发板)，可以参阅 [配置 Arduino IDE](#配置-arduino-ide)
+  * 目前VIEWE的开发板基本都支持，可以参阅 [配置 Arduino IDE](#配置-arduino-ide)
   * 如果您正在使用自定义开发板，可以选择相同系列芯片的通用开发板，如 `ESP32S3 Dev Module`。
 
 2. **打开示例**
