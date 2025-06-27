@@ -20,6 +20,7 @@
       ![image](https://github.com/user-attachments/assets/84290f8a-55b1-4d0a-8373-4375d6fe45aa)
       ![image](https://github.com/user-attachments/assets/34f7f218-c5db-4d8f-a195-5a8c65501d78)
       * 下载完成之后运行安装程序，全部默认安装即可。
+      * 环境设置是在 Windows 10 系统下进行，Linux和Mac用户可访问[Arduino-esp32环境搭建](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)参考
 
 ## 安装esp32
 * ESP32相关主板在Arduino IDE使用，须先安装“esp32 by Espressif Systems”开发板的软件包
@@ -62,26 +63,71 @@
      * 如果下载失败，重置其他开发板管理器地址:
           *   https://espressif.github.io/arduino-esp32/package_esp32_index.json
           *   https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json
+      * 若还是失败请选择离线安装   
  
 * 离线安装
   * 点击我们提供的百度网盘内的 ESP32 多个版本离线包，可根据板安装要求选择一个符合要求的版本进行下载，其余版本可按需自行下载。
   * 将提供的开发板压缩包解压缩
-    
+ 
+    ![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/download-path.jpg)
+
     C:\Users\{用户名}\AppData\Local\Arduino15\packages\
     
   * 将解压文件放在对应用户的arduino器件包目录
     
-    C:\Users\waveshare\AppData\Local\Arduino15\packages\
+    C:\Users\VIEWE\AppData\Local\Arduino15\packages\
     
   * 以用户名为VIEWE为例
   * 关闭全部arduino窗口，确保arduino关闭
   * 重新打开arduino，并打开板管理器,看到esp32-arduino已经安装即可
   若此路径下已有esp32的文件夹，建议将其另存并删除此路径下的原esp32文件夹，以便正常使用离线包新生成的esp32文件夹
 
+# 运行第一个 Arduino 程序
 
+  如果你刚入门学习ESP32和Arduino，还不知道如何创建、编译、烧录和运行Arduino ESP32程序，那么请从这里开始看看，希望可以帮助到你！
 
- 
+## 新建工程
+* 运行Arduino IDE，选择 File -> New Sketch
 
-
+  ![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/A-study-01.png)
   
+* 输入代码：
+```c
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+}
 
+void loop() {
+  // put your main code here, to run repeatedly:
+  Serial.println("Hello, World!");
+  delay(2000);
+}
+```
+* 保存代码工程，选择 `File -> Save As...`；在弹出的菜单选择保存工程路径，并输入工程名，如 **Hello_World**，点击`保存`
+  ![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/Ar-study-02.png)
+
+## 编译和烧录程序
+* 选择对应的开发板，以ESP32S3主板为例：
+  
+  ①. 点击选择下拉框选项“Select Other Board and Port”；
+  
+  ②. 搜索需要的开发板型号“esp32s3 dev module”并选择；
+  
+  ③. 选择COM口；
+  
+  ④. 保存选择。
+
+  ![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/Ar-study-03.png)
+
+* 若ESP32S3主板只有USB口，须打开（Enable）USB CDC，如下图所示
+  ![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/Ar-study-04.png)
+
+* 编译并上传程序：
+  ①. 编译程序；②. 编译并下载程序；③. 下载成功。
+  ![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/Ar-study-05.png)
+
+* 打开串口监视窗口，程序每隔2秒会打印“Hello World!”，运行情况如下所示：
+  ![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/Ar-study-06.png)
+
+至此你的Arduino入门之旅已经完成，可以开始你的下一步旅程[VIEWE开发板使用教程]()或者[VIEWE旋钮屏教程]()
