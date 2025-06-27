@@ -39,22 +39,13 @@
     - [在 Arduino IDE 中使用 ESP32\_Display\_Panel 时，如何降低其 Flash 占用及加快编译速度？](#在-arduino-ide-中使用-esp32_display_panel-时如何降低其-flash-占用及加快编译速度)
     - [在 Arduino IDE 中使用 ESP32\_Display\_Panel 时，如何避免 I2C 重复初始化（如使用 Wire 库）？](#在-arduino-ide-中使用-esp32_display_panel-时如何避免-i2c-重复初始化如使用-wire-库)
 
-## 依赖库
-
-| **依赖项** | **备注** |
-| ---------- | -------- |
-| esp32开发板软件包 | 建议>= v3.1.0 |
-| ESP32_Display_Panel| 安装当前最新版本并包括所有依赖库 |
-| ESP32_IO_Expander| ESP32_Display_Panel 依赖库 |
-|  esp-lib-utils  | ESP32_Display_Panel 依赖库 |
-| lvgl | 必须为V8版本，推荐8.4.0 |
 
 ## 快速入门
 
 ### 环境准备
 
 1. **安装 Arduino IDE**
-- 导航到[Arduino入门教程]()
+- 导航到[Arduino入门教程](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/Arduino%20Tutorial/Arduino%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B.md)
 
 2. **安装 ESP32 SDK**
 
