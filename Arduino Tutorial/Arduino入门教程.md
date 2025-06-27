@@ -1,4 +1,10 @@
 * [English Version](./How_To_Configure_Arduino-esp32.md)
+
+# 目录
+
+- [如何在Arduino IDE中安装esp32](#如何在Arduino-IDE中安装esp32)
+  - [安装Arduino IDE](#安装Arduino-IDE)
+  - [安装esp32](#安装esp32)
   
 # Arduino入门教程
 
@@ -6,11 +12,6 @@
 
 ![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/image.png)
 
-## 目录
-
-- [如何在Arduino IDE中安装esp32](#如何在Arduino-IDE中安装esp32)
-  - [安装Arduino IDE](#安装Arduino-IDE)
-  - [安装esp32](#安装esp32)
 # 环境搭建
   ## 下载和安装 Arduino IDE
   * [`点击`](https://www.arduino.cc/en/software) 这去进行下载
