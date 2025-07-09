@@ -2,9 +2,13 @@
 
 # 目录
 
-- [如何在Arduino IDE中安装esp32](#如何在Arduino-IDE中安装esp32)
-  - [安装Arduino IDE](#安装Arduino-IDE)
+- [Arduino入门教程](#Arduino入门教程)
+- [环境搭建](#环境搭建)
+  - [下载和安装 Arduino IDE](#下载和安装Arduino-IDE)
   - [安装esp32](#安装esp32)
+- [运行第一个 Arduino 程序](#运行第一个Arduino程序)
+  - [新建工程](#新建工程)
+  - [编译和烧录程序](#编译和烧录程序)
   
 # Arduino入门教程
 
@@ -131,4 +135,4 @@ void loop() {
 * 打开串口监视窗口，程序每隔2秒会打印“Hello World!”，运行情况如下所示：
   ![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/Ar-study-06.png)
 
-至此你的Arduino入门之旅已经完成，可以开始你的下一步旅程[VIEWE开发板使用教程]()或者[VIEWE旋钮屏教程]()
+至此你的Arduino入门之旅已经完成，可以开始你的下一步旅程,根据你的产品进入示例使用学习，也可直接看通用教程[VIEWE开发板在Arduino IDE使用说明](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/Arduino%20Tutorial/VIEWE%E5%BC%80%E5%8F%91%E6%9D%BF%E5%9C%A8Arduino%20IDE%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md)
