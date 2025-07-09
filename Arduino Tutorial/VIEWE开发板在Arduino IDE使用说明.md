@@ -45,7 +45,7 @@
 ### 环境准备
 
 1. **安装 Arduino IDE**
-- 导航到[Arduino入门教程](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/Arduino%20Tutorial/Arduino%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B.md)
+- 导航到[Arduino入门教程](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/Arduino%20Tutorial/Arduino%20IDE%E5%AE%89%E8%A3%85%E5%8F%8A%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B.md)
 
 2. **安装 ESP32 SDK**
 
