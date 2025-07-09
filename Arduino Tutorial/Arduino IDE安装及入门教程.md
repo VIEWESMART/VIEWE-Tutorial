@@ -1,4 +1,4 @@
-* [English Version](./How_To_Configure_Arduino-esp32.md)
+* [English Version](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/Arduino%20Tutorial/Arduino%20Getting%20Started%20Tutorial.md#downloading-and-installing-arduino-ide)
 
 # 目录
 
