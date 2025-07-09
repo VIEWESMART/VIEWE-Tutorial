@@ -14,7 +14,7 @@
 
 This chapter introduces Arduino environment setup, including Arduino IDE installation, ESP32 board management, library installation, program compilation/download, and sample program testing to help users master the development board for secondary development.
 
-![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/image.png)
+![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/FlowChart_cn.png)
 
 # Setting Up the Environment
 ## Downloading and Installing Arduino IDE
