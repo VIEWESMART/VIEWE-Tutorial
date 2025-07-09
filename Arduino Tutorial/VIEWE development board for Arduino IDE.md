@@ -71,17 +71,17 @@
 - Navigate to `Tools` > `Board` > `esp32`
 - Select your board model. If you can't find a matching model, refer to:
 
-  - If using a [supported board](../../README.md#supported-boards), see [Configuring Arduino IDE](#configuring-arduino-ide)
+  - If using a [supported board](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/README_CN.md#%E6%94%AF%E6%8C%81%E7%9A%84%E5%BC%80%E5%8F%91%E6%9D%BF), see [Configuring Arduino IDE](#configuring-arduino-ide)
   - If using a custom board, select a generic board with the same chip series, like `ESP32S3 Dev Module`. Then set other configurations as needed.
 
 2. **Open Example**
 
 - Navigate to `File` > `Examples` > `ESP32_Display_Panel`
-- Select `Arduino` > `board` > [`board_static_config`](../../examples/arduino/board/board_static_config/)
+- Select `Arduino` > `board` > [`board_static_config`](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/board/board_static_config)
 
 3. **Modify Code**
 
-- If you're using a [supported board](../../README.md#supported-boards), modify the macro definitions in *esp_panel_board_supported_conf.h* to enable the target board. See [Loading of Supported Boards](#loading-of-supported-boards) for more information.
+- If you're using a [supported board](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/README_CN.md#%E6%94%AF%E6%8C%81%E7%9A%84%E5%BC%80%E5%8F%91%E6%9D%BF), modify the macro definitions in *esp_panel_board_supported_conf.h* to enable the target board. See [Loading of Supported Boards](#loading-of-supported-boards) for more information.
 - If you're using a custom board, modify the macro definitions in *esp_panel_board_custom_conf.h* to configure board parameters. See [Loading of Custom Boards](#loading-of-custom-boards) for more information.
 
 4. **Compile and Upload**
@@ -98,7 +98,7 @@
 - Check [FAQ](#faq)
 
 > [!NOTE]
-> If you encounter any issues, please check the [FAQ](#faq) section first. If the problem persists, you can submit an issue on [GitHub](https://github.com/esp-arduino-libs/ESP32_Display_Panel/issues).
+> If you encounter any issues, please check the [FAQ](#faq) section first. If the problem persists, you can submit an issue on [GitHub](https://github.com/esp-arduino-libs/ESP32_Display_Panel/issues).You can also submit an issue at [VIEWE GitHub Issues](https://github.com/VIEWESMART/ESP32_Display_Panel/issues).
 
 ## SDK & Dependencies
 
@@ -132,9 +132,9 @@ For more detailed library installation guides, please refer to [Arduino IDE v1.x
 
 Since Arduino IDE cannot adjust configurations through menuconfig like ESP-IDF or through compilation options like PlatformIO, this library provides configuration through modifying specific configuration files. This mainly includes three configuration files:
 
-- [esp_panel_drivers_conf.h](../../esp_panel_drivers_conf.h)
-- [esp_panel_board_supported_conf.h](../../esp_panel_board_supported_conf.h)
-- [esp_panel_board_custom_conf.h](../../esp_panel_board_custom_conf.h)
+- [esp_panel_drivers_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/esp_panel_drivers_conf.h)
+- [esp_panel_board_supported_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/esp_panel_board_supported_conf.h)
+- [esp_panel_board_custom_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/esp_panel_board_custom_conf.h)
 
 Here are the characteristics of using configuration files:
 
@@ -151,7 +151,7 @@ Below are detailed instructions on how to configure ESP32_Display_Panel, mainly 
 
 ### Adjusting Driver Configuration
 
-ESP32_Display_Panel adjusts the functionality and parameters of code in `esp_panel::drivers` based on the [esp_panel_drivers_conf.h](../../esp_panel_drivers_conf.h) configuration file. Please follow these steps to configure:
+ESP32_Display_Panel adjusts the functionality and parameters of code in `esp_panel::drivers` based on the [esp_panel_drivers_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/esp_panel_drivers_conf.h) configuration file. Please follow these steps to configure:
 
 1. Refer to [Configuration Guide](#configuration-guide) to understand the configuration file search path.
 2. Confirm that *esp_panel_drivers_conf.h* exists in either the `current project directory` or `Arduino library directory`. If not, copy the configuration file from ESP32_Display_Panel's root directory or example projects to either directory.
@@ -167,11 +167,11 @@ ESP32_Display_Panel adjusts the functionality and parameters of code in `esp_pan
     ```
 
 > [!NOTE]
-> By default, only some drivers are enabled in *esp_panel_drivers_conf.h*. If you want to dynamically load board configurations through code (like in the [board_dynamic_config](../../examples/arduino/board/board_dynamic_config/) example), please enable all the drivers you need first.
+> By default, only some drivers are enabled in *esp_panel_drivers_conf.h*. If you want to dynamically load board configurations through code (like in the [board_dynamic_config]([../..](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/board/board_dynamic_config/) example), please enable all the drivers you need first.
 
 ### Loading of Supported Boards
 
-ESP32_Display_Panel sets the default board configuration in `esp_panel::board::Board` based on the [esp_panel_board_supported_conf.h](../../esp_panel_board_supported_conf.h) configuration file. Please follow these steps to configure:
+ESP32_Display_Panel sets the default board configuration in `esp_panel::board::Board` based on the [esp_panel_board_supported_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/esp_panel_board_supported_conf.h) configuration file. Please follow these steps to configure:
 
 1. Refer to [Configuration Guide](#configuration-guide) to understand the configuration file search path.
 2. Confirm that *esp_panel_board_supported_conf.h* exists in either the `current project directory` or `Arduino library directory`. If not, copy the configuration file from ESP32_Display_Panel's root directory or example projects to either directory.
@@ -198,7 +198,7 @@ ESP32_Display_Panel sets the default board configuration in `esp_panel::board::B
 
 ### Loading of Custom Boards
 
-ESP32_Display_Panel sets the default board configuration in `esp_panel::board::Board` based on the [esp_panel_board_custom_conf.h](../../esp_panel_board_custom_conf.h) configuration file. Please follow these steps to configure:
+ESP32_Display_Panel sets the default board configuration in `esp_panel::board::Board` based on the [esp_panel_board_custom_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/esp_panel_board_custom_conf.h) configuration file. Please follow these steps to configure:
 
 1. Refer to [Configuration Guide](#configuration-guide) to understand the configuration file search path.
 2. Confirm that *esp_panel_board_custom_conf.h* exists in either the `current project directory` or `Arduino library directory`. If not, copy the configuration file from ESP32_Display_Panel's root directory or example projects to either directory.
@@ -290,32 +290,32 @@ You can access all examples in Arduino IDE through `File` > `Examples` > `ESP32_
 
 The following examples demonstrate how to use `esp_panel::drivers::LCD` to drive LCD controllers with different interfaces and models, and test them by displaying color bars:
 
-* [SPI LCD](../../examples/arduino/drivers/lcd/lcd_spi/)
-* [QSPI LCD](../../examples/arduino/drivers/lcd/lcd_qspi/)
-* [Single RGB LCD](../../examples/arduino/drivers/lcd/lcd_single_rgb/)
-* [3-wire SPI + RGB LCD](../../examples/arduino/drivers/lcd/lcd_3wire_spi_rgb/)
-* [MIPI-DSI LCD](../../examples/arduino/drivers/lcd/lcd_mipi_dsi/)
+* [SPI LCD](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/lcd/lcd_spi/)
+* [QSPI LCD](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/lcd/lcd_qspi/)
+* [Single RGB LCD](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/lcd/lcd_single_rgb/)
+* [3-wire SPI + RGB LCD](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/lcd/lcd_3wire_spi_rgb/)
+* [MIPI-DSI LCD](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/lcd/lcd_mipi_dsi/)
 
 The following examples demonstrate how to use `esp_panel::drivers::Touch` to drive touch controllers with different interfaces and models, and test them by printing touch point coordinates:
 
-* [I2C Touch](../../examples/arduino/drivers/touch/touch_i2c/)
-* [SPI Touch](../../examples/arduino/drivers/touch/touch_spi/)
+* [I2C Touch](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/touch/touch_i2c/)
+* [SPI Touch](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/drivers/touch/touch_spi/)
 
 ### Board
 
 The following examples demonstrate how to use `esp_panel::board::Board` to drive the screen of built-in development boards or custom boards in one stop:
 
-* [Board Dynamic Config](../../examples/arduino/board/board_dynamic_config/): This example demonstrates how to dynamically load the display screen settings of development boards through code, and verify the configuration by displaying color bars and monitoring touch coordinates.
-* [Board Static Config](../../examples/arduino/board/board_static_config/): This example demonstrates how to statically load the display screen settings of development boards through `esp_panel_board_supported_conf.h` and `esp_panel_board_custom_conf.h` configuration files, and verify the configuration by displaying color bars and monitoring touch coordinates.
+* [Board Dynamic Config](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/board/board_dynamic_config/): This example demonstrates how to dynamically load the display screen settings of development boards through code, and verify the configuration by displaying color bars and monitoring touch coordinates.
+* [Board Static Config](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/board/board_static_config/): This example demonstrates how to statically load the display screen settings of development boards through `esp_panel_board_supported_conf.h` and `esp_panel_board_custom_conf.h` configuration files, and verify the configuration by displaying color bars and monitoring touch coordinates.
 
 ### GUI
 
 The following examples demonstrate how to develop GUI interfaces using `LVGL v8` version:
 
-* [Simple Port](../../examples/arduino/gui/lvgl_v8/simple_port/): This example demonstrates how to port `LVGL v8`. And for `RGB/MIPI-DSI` interfaces, it can enable the avoid tearing and rotation function.
-* [Simple Rotation](../../examples/arduino/gui/lvgl_v8/simple_rotation/): This example demonstrates how to rotate the display by using the `LVGL v8`.
-* [SquareLine Port](../../examples/arduino/gui/lvgl_v8/squareline_port/): This example demonstrates how to port `SquareLine (v1.4.x)` project. And for `RGB/MIPI-DSI` interfaces, it can enable the avoid tearing and rotation function.
-* [SquareLine Wi-Fi Clock](../../examples/arduino/gui/lvgl_v8/squareline_wifi_clock/): This example implements a simple Wi-Fi clock demo, which UI is created by Squareline Studio.
+* [Simple Port](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/gui/lvgl_v8/simple_port/): This example demonstrates how to port `LVGL v8`. And for `RGB/MIPI-DSI` interfaces, it can enable the avoid tearing and rotation function.
+* [Simple Rotation](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/gui/lvgl_v8/simple_rotation/): This example demonstrates how to rotate the display by using the `LVGL v8`.
+* [SquareLine Port](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/gui/lvgl_v8/squareline_port/): This example demonstrates how to port `SquareLine (v1.4.x)` project. And for `RGB/MIPI-DSI` interfaces, it can enable the avoid tearing and rotation function.
+* [SquareLine Wi-Fi Clock](https://github.com/esp-arduino-libs/ESP32_Display_Panel/tree/master/examples/arduino/gui/lvgl_v8/squareline_wifi_clock/): This example implements a simple Wi-Fi clock demo, which UI is created by Squareline Studio.
 
 > [!NOTE]
 > * When using the above examples, please ensure you have installed the `LVGL` library that meets the version requirements.
@@ -329,7 +329,7 @@ The following examples demonstrate how to develop GUI interfaces using `LVGL v8`
 
 ### Configuring esp-lib-utils
 
-ESP32_Display_Panel depends on the `esp-lib-utils` library, using its `logging`, `memory allocation`, and `checking` features. The `esp-lib-utils` library also adopts adjusting library behavior and parameters by modifying the specific configuration file [esp_utils_conf.h](../../template_files/esp_utils_conf.h). You can refer to [Adjusting Driver Configuration](#adjusting-driver-configuration) for modification.
+ESP32_Display_Panel depends on the `esp-lib-utils` library, using its `logging`, `memory allocation`, and `checking` features. The `esp-lib-utils` library also adopts adjusting library behavior and parameters by modifying the specific configuration file [esp_utils_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/template_files/esp_utils_conf.h). You can refer to [Adjusting Driver Configuration](#adjusting-driver-configuration) for modification.
 
 For example, to set the `logging` level to `DEBUG` and enable the `function tracing` feature, here's part of the modified *esp_utils_conf.h* file:
 
@@ -359,16 +359,16 @@ If your are using a custom board, please select a generic board with the same ch
 
 If you are using a [supported board](../../README.md#supported-boards), here are the recommended configuration guides provided by board manufacturers:
 
-- [Espressif](../../docs/board/board_espressif.md#arduino-ide)
-- [M5Stack](../../docs/board/board_m5stack.md#arduino-ide)
-- [Elecrow](../../docs/board/board_elecrow.md#arduino-ide)
-- [Jingcai](../../docs/board/board_jingcai.md#arduino-ide)
-- [Waveshare](../../docs/board/board_waveshare.md#arduino-ide)
-- [VIEWE](../../docs/board/board_viewe.md#arduino-ide)
+- [Espressif](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/docs/board/board_espressif.md#arduino-ide)
+- [M5Stack](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/docs/board/board_m5stack.md#arduino-ide)
+- [Elecrow](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/docs/board/board_elecrow.md#arduino-ide)
+- [Jingcai](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/docs/board/board_jingcai.md#arduino-ide)
+- [Waveshare](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/docs/board/board_waveshare.md#arduino-ide)
+- [VIEWE](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/docs/board/board_viewe.md#arduino-ide)
 
 ### Configuring LVGL
 
-LVGL's features and parameters can be adjusted by modifying the [lv_conf.h](../../template_files/lv_conf.h) configuration file. Here's how to configure LVGL:
+LVGL's features and parameters can be adjusted by modifying the [lv_conf.h](https://github.com/esp-arduino-libs/ESP32_Display_Panel/blob/master/template_files/lv_conf.h) configuration file. Here's how to configure LVGL:
 
 1. **Configuration File Search Rules**
 
