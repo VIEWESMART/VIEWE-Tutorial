@@ -1,7 +1,5 @@
 # 如何使用
-| 支持的 VIEWE开发板 | UEDX24320024E-WB-A |  UEDX24320028E-WB-A | UEDX24320035E-WB-A | UEDX32480035E-WB-A | 
-| -------------- | ----- | -------- | -------- | -------- |
-| 支持的 VIEWE开发板 | UEDX48270043E-WB-A | UEDX80480043E-WB-A | UEDX80480050E-WB-A |UEDX80480070E-WB-A |
+
 * [English Version](./How_To_Use.md)
 
 ## 目录
