@@ -76,15 +76,19 @@ This chapter introduces Arduino environment setup, including Arduino IDE install
 * Offline Installation:
   * Download ESP32 offline package (provided via Baidu Netdisk)
   * Extract the compressed file to:
-    ```
+    
+  ```
     C:\Users\{Username}\AppData\Local\Arduino15\packages\
-    ```
+  ```
+  
     ![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/download-path.jpg)
 
+
   * Example path (for user "VIEWE"):
-    ```
+    
+  ```
     C:\Users\VIEWE\AppData\Local\Arduino15\packages\
-    ```
+  ```
   * Close all Arduino IDE windows
   * Reopen Arduino IDE and verify installation in Board Manager
   * If existing esp32 folder exists, back up and replace with new files
@@ -96,6 +100,7 @@ This chapter introduces Arduino environment setup, including Arduino IDE install
   ![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/A-study-01.png)
   
 * Enter code:
+  
 ```c
 void setup() {
   // Initialize serial communication
@@ -107,7 +112,9 @@ void loop() {
   Serial.println("Hello, World!");
   delay(2000);
 }
-```c
+
+```
+
 * Save project: File → Save As... → Enter project name (e.g., Hello_World) → Click Save
   ![](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/img/Ar-study-02.png)
 
