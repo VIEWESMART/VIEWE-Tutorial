@@ -62,7 +62,8 @@ ESP32_Display_Panel 及依赖库已经上传到了 Arduino 库管理器，您可
 
 如果想要手动安装，可以通过 [Github](https://github.com/esp-arduino-libs/ESP32_Display_Panel) 或者 [Arduino Library](https://www.arduinolibraries.info/libraries/esp32_display_panel) 下载所需版本的 `.zip` 文件，然后在 Arduino IDE 中导航到 `Sketch` > `Include Library` > `Add .ZIP Library...`，选择下载的 `.zip` 文件并点击 `Open` 按钮进行安装。
 
-注意：lvgl并不是并不是必须库，只要在使用 `gui` 示例时使用，详细说明请参考[示例说明](#示例说明)
+> [!NOTE]
+> * lvgl并不是并不是必须库，只有在使用 `gui` 示例时使用，详细说明请参考[示例说明](#示例说明)
 
 ### 运行第一个示例 
 **第一个示例显示彩条和打印触摸坐标来验证配置若使用ui界面示例请参考[示例进阶](#示例进阶)**
