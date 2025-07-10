@@ -3,26 +3,25 @@ Still being improved. If anything is unclear, please contact us immediately for 
 
 ## Table of Contents
 
-- [Using in Arduino IDE](#using-in-arduino-ide)
+- [Using With Arduino IDE](#Using-With-Arduino-IDE)
   - [Table of Contents](#table-of-contents)
   - [Quick Start](#quick-start)
     - [Environment Preparation](#environment-preparation)
     - [Running Your First Example](#running-your-first-example)
-    - [Advanced Examples](#advanced-examples)
-  - [Configuration Instructions](#configuration-instructions)
+    - [Advanced Examples](#Advanced-Examples)
+  - [Configuration Guide](#configuration-guide)
     - [Adjusting Driver Configuration](#adjusting-driver-configuration)
-    - [Loading Supported Boards](#loading-supported-boards)
-  - [Supported viewe development boards](#Supported-viewe-development-boards)
-  - [Example Description](#example-description)
+    - [Loading of Supported Boards](#loading-of-supported-boards)
+  - [Supported viewe boards](#supported-viewe-boards)
+  - [Example Description](#Example-Description)
     - [Drivers](#drivers)
     - [Board](#board)
     - [GUI](#gui)
- - [Additional Information](#additional-information)
+  - [Additional Information](#additional-information)
     - [Configuring esp-lib-utils](#configuring-esp-lib-utils)
-    - [Configuring Arduino IDE](#configuring-arduino-ide)
     - [Configuring LVGL](#configuring-lvgl)
     - [Porting SquareLine Projects](#porting-squareline-projects)
- - [FAQ](#faq)
+  - [FAQ](#faq)
     - [Where is the Arduino library directory?](#where-is-the-arduino-library-directory)
     - [Where are the arduino-esp32 installation directory and SDK directory?](#where-are-the-arduino-esp32-installation-directory-and-sdk-directory)
     - [How to install ESP32\_Display\_Panel in Arduino IDE?](#how-to-install-esp32_display_panel-in-arduino-ide)
@@ -55,14 +54,13 @@ Still being improved. If anything is unclear, please contact us immediately for 
 - select `3.1.0` and above,click the `INSTALL` button to install
 
 3. **Install Required Libraries**
- 
-ESP32_Display_Panel and its dependencies are available in Arduino Library Manager. Install online:
+  ESP32_Display_Panel and its dependencies are available in Arduino Library Manager. Install online:
 
-1. In Arduino IDE, go to `Sketch` > `Include Library` > `Manage Libraries...`.
-2. Search for the `ESP32_Display_Panel` library and select `1.0.3` and above, click the `Install` button to install, you will be prompted whether to install its dependencies, please click `INSTALL ALL` to install all.
-3. Install `LVGL` library (optional), recommended version `8.4.0`.
+  - In Arduino IDE, go to `Sketch` > `Include Library` > `Manage Libraries...`.
+  - Search for the `ESP32_Display_Panel` library and select `1.0.3` and above, click the `Install` button to install, you will be prompted whether to install its dependencies, please click `INSTALL ALL` to install all.
+  - Install `LVGL` library (optional), recommended version `8.4.0`.
 
-For manual installation, you can download the required version's `.zip` file from [Github](https://github.com/esp-arduino-libs/ESP32_Display_Panel) or [Arduino Library](https://www.arduinolibraries.info/libraries/esp32_display_panel), then in Arduino IDE navigate to `Sketch` > `Include Library` > `Add .ZIP Library...`, select the downloaded `.zip` file and click `Open` to install.
+  For manual installation, you can download the required version's `.zip` file from [Github](https://github.com/esp-arduino-libs/ESP32_Display_Panel) or [Arduino Library](https://www.arduinolibraries.info/libraries/esp32_display_panel), then in Arduino IDE navigate to `Sketch` > `Include Library` > `Add .ZIP Library...`, select the downloaded `.zip` file and click `Open` to install.
 
 > [!NOTE]
 > * LVGL is only required for GUI examples
@@ -104,7 +102,7 @@ For manual installation, you can download the required version's `.zip` file fro
 1. **Select and configure board**
 
 - Go to `Tools` > `Board` > `esp32` > `ESP32S3 Dev Module`
-- Configure other settings according to [Supported viewe development boards](#Supported-viewe-development-boards)
+- Configure other settings according to [Supported viewe boards](#supported-viewe-boards)
 
 2. **Open example**
 
@@ -113,7 +111,7 @@ For manual installation, you can download the required version's `.zip` file fro
 
 3. **Modify code**
 
-- Modify macros in *esp_panel_board_supported_conf.h* to enable target board,See [Load Supported Boards](#Load-Supported-Boards) for more information.
+- Modify macros in *esp_panel_board_supported_conf.h* to enable target board,See [Loading of Supported Boards](#loading-of-supported-boards) for more information.
 
 > [!WARNING]
 > * Do not enable both `ESP_PANEL_BOARD_DEFAULT_USE_SUPPORTED` and `ESP_PANEL_BOARD_DEFAULT_USE_CUSTOM`
@@ -224,7 +222,7 @@ Below are detailed instructions on how to configure ESP32_Display_Panel, mainly 
 
 ### Adjusting Driver Configuration
 
-ESP32_Display_Panel adjusts the functionality and parameters of code in `esp_panel::drivers` based on the [esp_panel_drivers_conf.h](../../esp_panel_drivers_conf.h) configuration file. Please follow these steps to configure:
+ESP32_Display_Panel adjusts the functionality and parameters of code in `esp_panel::drivers` based on the `esp_panel_drivers_conf.h` configuration file. Please follow these steps to configure:
 
 1. Refer to [Configuration Guide](#configuration-guide) to understand the configuration file search path.
 2. Confirm that *esp_panel_drivers_conf.h* exists in either the `current project directory` or `Arduino library directory`. If not, copy the configuration file from ESP32_Display_Panel's root directory or example projects to either directory.
@@ -251,7 +249,7 @@ ESP32_Display_Panel sets the default board configuration in `esp_panel::board::B
 3. Set the `ESP_PANEL_BOARD_DEFAULT_USE_SUPPORTED` macro definition to `1` in the configuration file.
 4. Uncomment the macro definition corresponding to the target board model.
 5. Now, when calling the default constructor of `esp_panel::board::Board`, it will load the target board's configuration.
-6. For example, to use the `UEDX48480040E-WB-A` board, For development board selection, please refer to [Supported viewe development boards](#Supported-viewe-development-boards),here's part of the modified *esp_panel_board_supported_conf.h* file:
+6. For example, to use the `UEDX48480040E-WB-A` board, For development board selection, please refer to [Supported viewe boards](#Supported-viewe-boards),here's part of the modified *esp_panel_board_supported_conf.h* file:
 
     ```c
     ...
@@ -283,7 +281,7 @@ ESP32_Display_Panel sets the default board configuration in `esp_panel::board::B
     ...
     ```
 
-## Supported viewe development boards
+## Supported viewe boards
 | **Picture** |  Supported Boards   |   Selected Board   | PSRAM | Flash Mode | Flash Size | USB CDC On Boot | Partition Scheme |
 | :-----------------: | :-----------------: | :----------------: | :---: | :--------: | :--------: | :-------------: | :--------------: |
 |     <img src="https://github.com/VIEWESMART/UEDX24240013-MD50ESP32_1.3inch-Knob/blob/main/image/1.3.png" width="160">     | UEDX24240013-MD50E  | ESP32C3 Dev Module |  OPI  | QIO 80MHz  |    4MB     |     Enabled     |        4M        |
