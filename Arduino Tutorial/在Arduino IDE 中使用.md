@@ -8,13 +8,13 @@
 - [在 Arduino IDE 中使用](#在-arduino-ide-中使用)
   - [目录](#目录)
   - [快速入门](#快速入门)
+    - [产品了解及资料查找](#产品了解及资料查找)
     - [环境准备](#环境准备)
     - [运行第一个示例](#运行第一个示例)
     - [示例进阶](#示例进阶)
   - [配置说明](#配置说明)
     - [调整驱动配置](#调整驱动配置)
     - [加载支持的开发板](#加载支持的开发板)
-    - [加载自定义开发板](#加载自定义开发板)
   - [示例说明](#示例说明)
     - [Drivers](#drivers)
     - [Board](#board)
@@ -35,6 +35,24 @@
     - [在 Arduino IDE 中使用 ESP32\_Display\_Panel 时，如何降低其 Flash 占用及加快编译速度？](#在-arduino-ide-中使用-esp32_display_panel-时如何降低其-flash-占用及加快编译速度)
     - [在 Arduino IDE 中使用 ESP32\_Display\_Panel 时，如何避免 I2C 重复初始化（如使用 Wire 库）？](#在-arduino-ide-中使用-esp32_display_panel-时如何避免-i2c-重复初始化如使用-wire-库)
 ## 快速入门
+
+### 产品了解及资料查找
+| **inch**| **Picture** |  Name and GitHub   |
+| :-----------------: | :-----------------: | :-----------------: |
+|1.3|     <img src="https://github.com/VIEWESMART/UEDX24240013-MD50ESP32_1.3inch-Knob/blob/main/image/1.3.png" width="160">     | [UEDX24240013-MD50E](https://github.com/VIEWESMART/UEDX24240013-MD50ESP32_1.3inch-Knob)  |
+|1.5|     <img src="https://github.com/VIEWESMART/UEDX46460015-MD50ESP32-1.5inch-Touch-Knob-Display/blob/main/image/1.5.jpg" width="110">  | [UEDX46460015-MD50ET](https://github.com/VIEWESMART/UEDX46460015-MD50ESP32-1.5inch-Touch-Knob-Display)  |
+|1.75|     <img src="https://viewedisplay.com/wp-content/uploads/2025/06/1.11.jpg" width="180"> |   [VIEWE-SMARTRING](https://github.com/VIEWESMART/VIEWE-SMARTRING)   |
+|2.1|     <img src="https://github.com/VIEWESMART/UEDX48480021-MD80ESP32_2.1inch-Knob/blob/main/image/2.1.jpg" width="180"> | [UEDX48480021-MD80E](https://github.com/VIEWESMART/UEDX48480021-MD80ESP32_2.1inch-Knob)  |
+|2.1|     <img src="https://github.com/VIEWESMART/UEDX48480021-MD80ESP32-2.1inch-Touch-Knob-Display/blob/main/image/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241129110611.jpg" width="130"> | [UEDX48480021-MD80ET](https://github.com/VIEWESMART/UEDX48480021-MD80ESP32-2.1inch-Touch-Knob-Display) |
+|2.4|     <img src="https://viewedisplay.com/wp-content/uploads/2024/11/UEDX24320024E-WB-A.jpg" width="150">  | [UEDX24320024E-WB-A](https://github.com/VIEWESMART/UEDX24320028ESP32-2.4inch-Touch-Display)  |
+|2.8|     <img src="https://viewedisplay.com/wp-content/uploads/2024/11/UEDX24320028E-WB-A.jpg" width="150">   | [UEDX24320028E-WB-A](https://github.com/VIEWESMART/UEDX24320028ESP32-2.8inch-Touch-Display) |
+|3.5|     <img src="https://viewedisplay.com/wp-content/uploads/2024/11/UEDX24320035E-WB-A-1.jpg" width="150">  | [UEDX24320035E-WB-A](https://github.com/VIEWESMART/UEDX24320028ESP32-3.5inch-240_320-Touch-Display)  |
+|3.5|     <img src="https://viewedisplay.com/wp-content/uploads/2024/11/UEDX32480035E-WB-A.jpg" width="150"> |[ UEDX32480035E-WB-A](https://github.com/VIEWESMART/UEDX24320028ESP32-3.5inch-320_480-Display)  |
+|4.3|     <img src="https://viewedisplay.com/wp-content/uploads/2024/07/UEDX80480043E-13.jpg" width="150">  | [UEDX48270043E-WB-A](https://github.com/VIEWESMART/UEDX48270043E-ESP32-4.3inch-Touch-Display)  |
+|4.0|     <img src="https://viewedisplay.com/wp-content/uploads/2024/07/DX48480040E-WB-A-%E6%AD%A3.jpg" width="150"> | [UEDX48480040E-WB-A](https://github.com/VIEWESMART/UEDX48480040ESP32-4inch-Touch-Display)  |
+|4.3|     <img src="https://viewedisplay.com/wp-content/uploads/2024/07/UEDX80480043E-13.jpg" width="150">  | [UEDX80480043E-WB-A](https://github.com/VIEWESMART/UEDX80480043ESP32-4.3inch-Touch-Display)  |
+|5.0|     <img src="https://viewedisplay.com/wp-content/uploads/2024/06/DX80480050E-aa.jpg" width="150">   | [UEDX80480050E-WB-A](https://github.com/VIEWESMART/UEDX80480050ESP32-5inch-Touch-Display)  |
+|7.0|     <img src="https://viewedisplay.com/wp-content/uploads/2024/08/DX80480070E-a2.jpg" width="150">   | [UEDX80480070E-WB-A](https://github.com/VIEWESMART/UEDX80480070ESP32-7inch-Touch-Display)  |
 
 ### 环境准备
 
