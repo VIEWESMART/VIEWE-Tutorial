@@ -1,3 +1,5 @@
+[**中文**](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/Arduino%20Tutorial/%E5%9C%A8Arduino%20IDE%20%E4%B8%AD%E4%BD%BF%E7%94%A8.md)
+
 # Using With Arduino IDE
 Still being improved. If anything is unclear, please contact us immediately for optimization.
 
