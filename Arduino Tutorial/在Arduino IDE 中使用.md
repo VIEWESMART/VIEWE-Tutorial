@@ -39,11 +39,11 @@
 ### 产品了解及资料查找
 | **inch**| **Picture** |  Name and GitHub   |
 | :-----------------: | :-----------------: | :-----------------: |
-|1.3|     <img src="https://github.com/VIEWESMART/UEDX24240013-MD50ESP32_1.3inch-Knob/blob/main/image/1.3.png" width="160">     | [UEDX24240013-MD50E](https://github.com/VIEWESMART/UEDX24240013-MD50ESP32_1.3inch-Knob)  |
+|1.3|     <img src="https://github.com/VIEWESMART/UEDX24240013-MD50ESP32_1.3inch-Knob/blob/main/image/1.3.png" width="120">     | [UEDX24240013-MD50E](https://github.com/VIEWESMART/UEDX24240013-MD50ESP32_1.3inch-Knob)  |
 |1.5|     <img src="https://github.com/VIEWESMART/UEDX46460015-MD50ESP32-1.5inch-Touch-Knob-Display/blob/main/image/1.5.jpg" width="110">  | [UEDX46460015-MD50ET](https://github.com/VIEWESMART/UEDX46460015-MD50ESP32-1.5inch-Touch-Knob-Display)  |
 |1.75|     <img src="https://viewedisplay.com/wp-content/uploads/2025/06/1.11.jpg" width="180"> |   [VIEWE-SMARTRING](https://github.com/VIEWESMART/VIEWE-SMARTRING)   |
-|2.1|     <img src="https://github.com/VIEWESMART/UEDX48480021-MD80ESP32_2.1inch-Knob/blob/main/image/2.1.jpg" width="180"> | [UEDX48480021-MD80E](https://github.com/VIEWESMART/UEDX48480021-MD80ESP32_2.1inch-Knob)  |
-|2.1|     <img src="https://github.com/VIEWESMART/UEDX48480021-MD80ESP32-2.1inch-Touch-Knob-Display/blob/main/image/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241129110611.jpg" width="130"> | [UEDX48480021-MD80ET](https://github.com/VIEWESMART/UEDX48480021-MD80ESP32-2.1inch-Touch-Knob-Display) |
+|2.1|     <img src="https://github.com/VIEWESMART/UEDX48480021-MD80ESP32_2.1inch-Knob/blob/main/image/2.1.jpg" width="190"> | [UEDX48480021-MD80E](https://github.com/VIEWESMART/UEDX48480021-MD80ESP32_2.1inch-Knob)  |
+|2.1|     <img src="https://github.com/VIEWESMART/UEDX48480021-MD80ESP32-2.1inch-Touch-Knob-Display/blob/main/image/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241129110611.jpg" width="140"> | [UEDX48480021-MD80ET](https://github.com/VIEWESMART/UEDX48480021-MD80ESP32-2.1inch-Touch-Knob-Display) |
 |2.4|     <img src="https://viewedisplay.com/wp-content/uploads/2024/11/UEDX24320024E-WB-A.jpg" width="150">  | [UEDX24320024E-WB-A](https://github.com/VIEWESMART/UEDX24320028ESP32-2.4inch-Touch-Display)  |
 |2.8|     <img src="https://viewedisplay.com/wp-content/uploads/2024/11/UEDX24320028E-WB-A.jpg" width="150">   | [UEDX24320028E-WB-A](https://github.com/VIEWESMART/UEDX24320028ESP32-2.8inch-Touch-Display) |
 |3.5|     <img src="https://viewedisplay.com/wp-content/uploads/2024/11/UEDX24320035E-WB-A-1.jpg" width="150">  | [UEDX24320035E-WB-A](https://github.com/VIEWESMART/UEDX24320028ESP32-3.5inch-240_320-Touch-Display)  |
