@@ -1,4 +1,4 @@
-# Using in Arduino IDE
+# Using With Arduino IDE
 Still being improved. If anything is unclear, please contact us immediately for optimization.
 
 ## Table of Contents
