@@ -1,3 +1,5 @@
+[**English**](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/esp-idf/esp-idf_Beginner_Tutorial.md)
+
 # esp-idf新手入门教程
 
 本章介绍 ESP-IDF 环境搭建和第一个程序的创建，包括 Visual Studio、Espressif IDF插件的安装。
