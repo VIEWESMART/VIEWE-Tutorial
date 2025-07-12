@@ -23,6 +23,6 @@ These three development approaches each have their strengths, allowing developer
 | Arduino Tutorial | ESP-IDF Tutorial | PlatformIO Tutorial | SquareLine Tutorial |
 | :--------------- | :--------------: | :-----------------: | :-----------------: |
 | ![](img/Arduino.webp) | ![](img/ESP-IDF-Logo.webp) | ![](img/PlatformIO-Logo.png) | ![](img/SquareLineStudio-Logo.webp) |
-| [![](img/GetStarted.webp)]() | [![](img/GetStarted.webp)]() | [![](img/GetStarted.webp)]() | [![](img/GetStarted.webp)]() |
+| [![](img/GetStarted.webp)](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/Arduino%20Tutorial/Arduino%20Getting%20Started%20Tutorial.md) | [![](img/GetStarted.webp)](https://github.com/VIEWESMART/VIEWE-Tutorial/blob/main/esp-idf/esp-idf_Beginner_Tutorial.md) | [![](img/GetStarted.webp)]() | [![](img/GetStarted.webp)]() |
 
 In this repository, we will introduce each of the three development environments and the UI design tool in detail—from installation to execution. We aim to provide comprehensive tutorials for newcomers and DIY enthusiasts and hope to assist everyone in their journey. We will continuously update and improve!
